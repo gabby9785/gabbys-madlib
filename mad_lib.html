@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--
+This page makes a Mad Lib story. For an example of a similar page, go here:
+
+http://www.redkid.net/madlibs/
+-->
+
+<html>
+<head>
+<title>Gabby's MadLib</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Kavivanar" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Gabby's MadLib</h1>
+<div id="instru">
+  <p class="instructions">
+    Enter a value into each field. Then click ' Make  Story ' to read a funny story.
+  </p>
+
+  <form>
+    Write a name <br><input type="text" id='name1'><br><br>
+    Write a name <br><input type="text" id='name2'> <br><br>
+    Write a place <br><input type="text" id='noun1'> <br><br>
+    Write a plural noun <br><input type="text" id='noun2'> <br><br>
+    Write a name <br><input type="text" id='name3'> <br><br>
+    Write a noun <br><input type="text" id='noun3'> <br><br>
+    Write a adjective <br><input type="text" id='adjective1'> <br><br>
+    Write a verb ending in -ing <br><input type="text" id='verb1'> <br><br>
+    Write a verb ending in -ed <br><input type="text" id='verb2'> <br><br>
+    Write a verb ending in -ed <br><input type="text" id='verb3'> <br><br>
+    Write a noun <br><input type="text" id='noun4'> <br><br>
+    Write a noun <br><input type="text" id='noun5'> <br><br>
+    Write an exclamation <br><input type="text" id='interjection1'> <br><br>
+    Write a place <br><input type="text" id='noun6'> <br><br>
+    Write a noun <br><input type="text" id='noun7'> <br><br>
+    Write a noun <br><input type="text" id='noun8'> <br><br>
+    Write a name <br><input type="text" id='name4'> <br><br>
+
+    <input type="button" onclick="makeStory();hideDiv();" value="Make Story">
+  </form>
+</div>
+
+<center><div class="story">
+    <h2 id="title"></h2>
+    <p id="story"></p>
+</div></center>
+
+<script src="story_maker.js" charset="utf-8"></script>
+</body>
+</html>
